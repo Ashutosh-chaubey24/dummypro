@@ -1,0 +1,25 @@
+h1{
+    color: red;
+}
+.prent{
+    background-color: aliceblue;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
+img{
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
