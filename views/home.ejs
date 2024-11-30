@@ -9,7 +9,8 @@
 <body>
     <h1>instagram posts</h1>
    <%for (post of posts){ %>
-    <div class="prent">
+    <div class="base">
+        <div class="prent">
         <div class="box">
             <img src="<%=post.userimg %>" alt="hell
             ">
@@ -17,8 +18,14 @@
         </div>
         <h2><%=post.username %></h2>
         <h3><%=post.contant %></h3>
-        <!-- <a href="/posts/new">create a new posts</a> -->
+        <a href="/posts/<%= post.userid %>">user details</a>
+        <a href="/posts/<%= post.userid %>/edit">edit</a>
+        <form action="/posts/<%=post.userid %>/?_method=DELETE" method="post">
+            <button type="submit">delete</button>
+        </form>
     </div>
+</div>
+    
     <% } %>
     <a href="/posts/new">create a new posts</a>
 </body>
